@@ -3,6 +3,17 @@
 ###############################################################################
 * text=auto
 
+# Ignore bootstrap and vendor CSS/JS
+*.min.css linguist-generated=true
+*.min.js linguist-generated=true
+*.css.map linguist-generated=true
+*.js.map linguist-generated=true
+
+*/Content/bootstrap** linguist-vendored=true
+*/Content/Darkly.css linguist-vendored=true
+*/Content/Yeti.css linguist-vendored=true
+*/Scripts/** linguist-vendored=true
+
 ###############################################################################
 # Set default behavior for command prompt diff.
 #
